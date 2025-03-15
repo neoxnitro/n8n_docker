@@ -1,1 +1,4 @@
-./generatexcookie.js
+custom-whisper/
+docker-compose-bck.yml
+generatexcookie.js
+letsencrypt/
