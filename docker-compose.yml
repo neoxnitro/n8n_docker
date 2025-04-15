@@ -17,6 +17,20 @@ services:
     restart: unless-stopped
     networks:
       - n8n_network
+      
+  image-editor:
+    image: image-editor-api
+    container_name: image-editor
+    volumes:
+      - ./image-editor/app.py:/app/app.py
+    build:
+      context: ./image-editor
+      dockerfile: Dockerfile
+    ports:
+      - "5000:5000"
+    restart: unless-stopped
+    networks:
+      - n8n_network
 
   nginx:
     image: nginx:latest
@@ -37,6 +51,8 @@ services:
       - n8n
     networks:
       - n8n_network
+      
+
 
 
 
