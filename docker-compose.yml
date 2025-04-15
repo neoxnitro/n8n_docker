@@ -5,7 +5,7 @@ services:
     image: docker.n8n.io/n8nio/n8n
     container_name: n8n
     volumes:
-      - n8n_data:/home/node/.n8n
+      - .n8n:/home/node/.n8n
       - ./generatexcookie.js:/home/node/generatexcookie.js
     environment:
       - N8N_ENFORCE_SETTINGS_FILE_PERMISSIONS=true
