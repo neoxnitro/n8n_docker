@@ -23,6 +23,7 @@ services:
     container_name: image-editor
     volumes:
       - ./image-editor/app.py:/app/app.py
+      - ./image-editor/fonts:/app/fonts/
     build:
       context: ./image-editor
       dockerfile: Dockerfile
