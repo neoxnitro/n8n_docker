@@ -2,3 +2,4 @@ custom-whisper/
 docker-compose-bck.yml
 generatexcookie.js
 letsencrypt/
+.n8n/*.log
